@@ -32,3 +32,8 @@
 26. [Number](/modern-javascript-deep-dive/28_Number.md)
 27. [Math](/modern-javascript-deep-dive/29_Math.md)
 28. [Date](/modern-javascript-deep-dive/30_Date.md)
+29. [RegExp](/modern-javascript-deep-dive/31_RegExp.md)
+30. [String](/modern-javascript-deep-dive/32_String.md)
+31. [7번째 데이터 타입 Symbol](/modern-javascript-deep-dive/33_7번째_데이터_타입_Symbol.md)
+32. [이터러블](/modern-javascript-deep-dive/34_이터러블.md)
+33. [스프레드 문법](/modern-javascript-deep-dive/35_스프레드_문법.md)
