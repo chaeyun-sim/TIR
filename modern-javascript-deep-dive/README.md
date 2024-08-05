@@ -37,3 +37,7 @@
 31. [7번째 데이터 타입 Symbol](/modern-javascript-deep-dive/33_7번째_데이터_타입_Symbol.md)
 32. [이터러블](/modern-javascript-deep-dive/34_이터러블.md)
 33. [스프레드 문법](/modern-javascript-deep-dive/35_스프레드_문법.md)
+34. [디스트럭처링 할당](/modern-javascript-deep-dive/36_디스트럭처링_할당.md)
+35. [Set과 Map](/modern-javascript-deep-dive/37_Set과_Map.md)
+36. [브라우저 렌더링 과정](/modern-javascript-deep-dive/38_브라우저_렌더링_과정.md)
+37. [DOM](/modern-javascript-deep-dive/39_DOM.md)
