@@ -48,3 +48,6 @@
 42. [Rest API](/modern-javascript-deep-dive/44_REST_API.md)
 43. [프로미스](/modern-javascript-deep-dive/45_Promise.md)
 44. [제너레이터와 async/await](/modern-javascript-deep-dive/46_제너레이터와_async_await.md)
+45. [에러 처리](/modern-javascript-deep-dive/47_에러_처리.md)
+46. [모듈](/modern-javascript-deep-dive/48_모듈.md)
+47. [Babel과 Webpack을 이용한 ES6+/ES.NEXT 개발 환경 구축](/modern-javascript-deep-dive/49_Babel과_Webpack을_이용한_개발_환경_구축.md)
