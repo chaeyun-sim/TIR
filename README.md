@@ -3,6 +3,7 @@
 ## 🔄 읽고 있는 책
 
 - [우아한 타입스크립트 with 리액트](/woowahan-typescript-with-react/)
+- [TypeScript 공식 문서](/typescript/)
 
 <br />
 
