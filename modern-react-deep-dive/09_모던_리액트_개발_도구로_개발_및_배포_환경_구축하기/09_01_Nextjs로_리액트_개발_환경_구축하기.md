@@ -44,11 +44,11 @@
 ```js
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-	reactStrictMode: true,
-	poweredByHeader: false,
-	eslint: {
-		ignoreDuringBuilds: true,
-	},
+  reactStrictMode: true,
+  poweredByHeader: false,
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
 };
 
 module.exports = nextConfig;
@@ -68,8 +68,8 @@ const path = require('path');
 const createConfig = require('@titicaca/eslint-config-triple/create-config');
 
 const { extends: extendConfigs, overrides } = createConfig({
-	type: 'frontend',
-	project: path.resolve(__dirname, './tsconfig.json'),
+  type: 'frontend',
+  project: path.resolve(__dirname, './tsconfig.json'),
 });
 
 module.exports = {
@@ -88,32 +88,32 @@ module.exports = {
 
 ```tsx
 export default function Document() {
-	// ...
+  // ...
 }
 
 Document.getInitialProps = async () => {
-	const sheet = new ServerStyleSheet();
-	const originalRenderPage = ctx.renderPage;
+  const sheet = new ServerStyleSheet();
+  const originalRenderPage = ctx.renderPage;
 
-	try {
-		ctx.renderPage = () =>
-			originalRenderPage({
-				enhanceApp: (App) => (props) => sheet.collectStyles(<App {...props} />),
-			});
+  try {
+    ctx.renderPage = () =>
+      originalRenderPage({
+        enhanceApp: (App) => (props) => sheet.collectStyles(<App {...props} />),
+      });
 
-		const initialProps = await Document.getInitialProps(ctx);
-		return {
-			...initialProps,
-			styles: (
-				<>
-					{initialProps.styles}
-					{sheet.getStyleElement()}
-				</>
-			),
-		};
-	} finally {
-		sheet.seal();
-	}
+    const initialProps = await Document.getInitialProps(ctx);
+    return {
+      ...initialProps,
+      styles: (
+        <>
+          {initialProps.styles}
+          {sheet.getStyleElement()}
+        </>
+      ),
+    };
+  } finally {
+    sheet.seal();
+  }
 };
 ```
 
