@@ -29,8 +29,8 @@ npx create-next-app@latest --ts
 ```ts
 /** @type (import('next').NextConfig) */
 const nextConfig = {
-	reactStrictMode: true,
-	swcMinify: true,
+  reactStrictMode: true,
+  swcMinify: true,
 };
 
 module.exports = nextConfig;
@@ -52,15 +52,15 @@ module.exports = nextConfig;
 import { Html, Head, Main, NextScript } from 'next/document';
 
 export default function Document() {
-	return (
-		<Html lang='ko'>
-			<Head />
-			<body className='body'>
-				<Main />
-				<NextScript />
-			</body>
-		</Html>
-	);
+  return (
+    <Html lang='ko'>
+      <Head />
+      <body className='body'>
+        <Main />
+        <NextScript />
+      </body>
+    </Html>
+  );
 }
 ```
 
@@ -77,12 +77,12 @@ export default function Document() {
 import { NextPageContext } from 'next';
 
 function Error() {
-	// ...
+  // ...
 }
 
 Error.getInitialprops = ({ res, err }: NextPageContext) => {
-	const statusCode = res ? res.statusCode : err ? err.statusCode : '';
-	return { statusCode };
+  const statusCode = res ? res.statusCode : err ? err.statusCode : '';
+  return { statusCode };
 };
 ```
 
@@ -146,14 +146,14 @@ export const getServerSideProps = (context: NextPageContext) => {
 
   ```ts
   type Data = {
-  	name: string;
+    name: string;
   };
 
   export default function handler(
-  	req: NextApiRequest,
-  	res: NextApiResponse<Data>
+    req: NextApiRequest,
+    res: NextApiResponse<Data>
   ) {
-  	res.status(200).json({ name: 'Harry Potter' });
+    res.status(200).json({ name: 'Harry Potter' });
   }
   ```
 
@@ -218,16 +218,16 @@ import App, { AppContext } from 'next/app';
 import type { AppProps } from 'next/app';
 
 function App({ Component, pageProps }: AppProps) {
-	return (
-		<>
-			<Component {...pageProps} />
-		</>
-	);
+  return (
+    <>
+      <Component {...pageProps} />
+    </>
+  );
 }
 
 App.getInitialProps = async (context: AppContext) => {
-	const appProps = await App.getInitialProps(context);
-	return appProps;
+  const appProps = await App.getInitialProps(context);
+  return appProps;
 };
 
 export default App;
